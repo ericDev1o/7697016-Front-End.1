@@ -2,6 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Les Bonnes Pièces</title>
 		<link rel="stylesheet" href="styles.css">
 		<script type="module" src="pieces.js"></script>
@@ -15,10 +16,26 @@
 			<!-- Menu de recherche -->
 			<section class="filtres">
 				<h3>Filtres</h3>
+				<button class="btn-trier-prix-croissant">Trier par prix croissant</button>
+				</br></br>
+				<button class="btn-trier-prix-decroissant">Trier par prix décroissant</button>
+				</br></br>
+				<button class="btn-filtrer-prix">Filtrer les pièces non abordables</button>
+				</br></br>
+				<button class="btn-filtrer-description">Filtrer les pièces non décrites</button>
+				</br></br>
+				<label for="filtrer-plage-prix">Choisissez le prix maximal pour filtrage:</label>
+				<input type="range" name="filtrer-plage-prix" id="filtrer-plage-prix" min="0" max="60" step="5">
 			</section>
 
 			<!-- Fiches produits -->
 			<section class="fiches">
+				<div class="abordables">
+					<p>Pièces abordables:</p>
+				</div>
+				<div class="disponibles">
+					<p>Pièces disponibles:</p>
+				</div>
 			</section>
 		</main>
 	</body>
